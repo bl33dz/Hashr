@@ -36,7 +36,7 @@ function banner() {
 banner();
 
 if($argv[1] == "help") {
-	help($argv[0]);
+	help("hashr");
 } elseif($argv[1] == "show_algos") {
 	show_algos();
 } elseif($argv[1] == "hash") {
@@ -47,7 +47,7 @@ if($argv[1] == "help") {
 	}
 	print "[+] String: ".$argv[3].PHP_EOL."[+] Algorithm: ".$argv[2].PHP_EOL."[+] Result: ".$hash.PHP_EOL."[+] Length: ".strlen($hash);
 } else {
-	print "[-] Err: Invalid argument\n[+] Type \"".$argv[0]." help\"";
+	print "[-] Err: Invalid argument\n[+] Type \"hashr help\"";
 }
 
 print "\n\n";
